@@ -1,5 +1,5 @@
 """
-WSGI config for hellodjango project.
+WSGI config for eforea project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
