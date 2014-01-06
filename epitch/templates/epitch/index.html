@@ -1,4 +1,105 @@
 {% extends "base.html" %}
+{% block page_script %}
+<script>
+	jQuery(document).ready(function($) {
+		$("#nav-epitch").addClass('active');
+	});
+</script>
+{% endblock %}
 {% block content %}
-<h1>Welcome to epitch</h1>
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>REGISTRATIONS FOR E-PITCH ARE NOW OPEN</h4>
+				<p><a href="{% url 'epitch:register' %}" class="btn btn-lg btn-primary">REGISTER HERE</a></p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
+
+
+	<div class="container desc">
+		<div class="row">
+			<br><br>
+			<div class="col-lg-5 centered">
+				
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-7">
+				<h4>ABOUT E-PITCH</h4>
+				<p>E-pitch is the annual flagship B-Plan contest of NITK, Surathkal organised by EFOREA. E-Pitch provides the perfect platform for budding student entrepreneurs to launch their innovative and creative business ideas. Every year E-Pitch receives over 150 entries with the winners of E-Pitch being offered incubation support at NITK-STEP. The winners also bag a direct entry to Next Big Idea, one of the country’s largest B-Plan contests organized by NSRCEL, IIM B. Open to all college students, E-Pitch provides a perfect head-start for student entrepreneurs.</p>
+				<p>Prizes</p>
+					<i class="fa fa-circle-o"></i> 1st prize: Rs. 50,000<br/>
+					<i class="fa fa-circle-o"></i> 2nd prize: Rs. 35,000<br/>
+					<i class="fa fa-circle-o"></i> 3rd prize: Rs. 20,000<br/>
+				<br/>
+				<p>Consolation prizes of Rs. 5,000 to the next 5 teams.
+				<br>Incubation at NITK STEP with seed funding of Rs. 10,00,000 to the top 3 teams.</p>	
+				</p>
+			</div>
+		</div><!-- row -->
+		
+		<br><br>
+		<hr>
+		<br><br>
+		<div class="row">
+			<div class="col-lg-5 centered">
+				
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-7">
+				<h4>Rules and Regulations</h4>
+					<ul>
+						<li>
+							Only students currently pursuing undergraduate or post-graduate courses in colleges with a valid College ID card can participate.
+						</li>
+						<li>A team can have a maximum of 4 members (Interdisciplinary teams are encouraged).</li>
+						<li>
+							The proposed business idea must be the original work of the team making the submission.
+						</li>
+						<li>
+							An individual can be part of only one team.
+						</li>
+						<li>
+							The business plan must not exceed 2000 words and should be sent to <a href="mailto:epitch.eforea@gmail.com">epitch.eforea@gmail.com</a> in PDF Format by 11:59 PM, January 22nd 2014.
+						</li>
+						<li>
+							This cover page should include names and contact details of the team members and name of the idea.
+						</li>
+						<li>
+							Shortlisted teams will be notified well before the Final Round – February 5th 2014.
+						</li>
+						<li>
+							Only one submission per participant is allowed.
+						</li>
+						<li>
+							All decisions of the Organizing Committee of E-Pitch 2013 are final and binding.
+						</li>
+
+					</ul>
+					<br/>
+				</p>
+			</div>
+		</div><!-- row -->
+
+		<br><br>
+		
+	</div><!-- container -->
+
+	
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					
+					<p>feel free to contact us reagarding E-Pitch at
+					<p>
+								Gaurav Oswal<br>
+								P: 7411288810 <br>
+								E: <a href="mailto:eforeanitk@gmail.com">eforeanitk@gmail.com</a>
+							</p>
+					</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>
 {% endblock %}

@@ -462,3 +462,15 @@ a:after {
     padding: 0;
 }
 
+.ffd{
+    background-color: #16a085;
+}
+#dg form{
+    font-family: "Raleway";
+    background: #e0e0e0;
+    padding: 10px;
+}
+
+#dg form label, #dg form legend{
+    
+}
