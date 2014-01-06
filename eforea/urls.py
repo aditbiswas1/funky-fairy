@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^projects$', 'static_pages.views.projects', name='projects'),
     url(r'^startups$', 'static_pages.views.startups', name='startups'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^epitch/', include('epitch.urls', namespace="epitch")),
 )

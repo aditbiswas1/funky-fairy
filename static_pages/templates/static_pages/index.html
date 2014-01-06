@@ -1,68 +1,65 @@
 {% extends "base.html" %}
-
-{% block load_script %}
-<script>
-	$(document).ready(function(){
-	$('#nav').localScroll(800);
-	
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
-
-});
-</script>
-{% endblock %}
 {% block content %}
-			
-	<div id="intro">
-		<div class="story">
-	    	<div class="float-left">
-	    		<h1>About Us</h1>
-			<p>
-						Engineerâ€™s Forum for Entrepreneurship Awareness (E-FOREA) is the E-CELL of NITK
-					</p>
-					<p>
-						Engineersâ€™ Forum for Entrepreneurship Awareness (EFOREA) is the E-Cell of NITK. Itâ€™s raison dâ€™Ãªtre (as its more verbose members would say) is to disseminate entrepreneurship education among students, and encourage them to come up with unique ideas â€“ and then build on those ideas to start their own venture. E-FOREA was awarded the best technical school promoting entrepreneurship education in India by Intel and NITIE, in 2012.
-					</p>
-					<p>
-E-FOREA provides entrepreneurship education, incubation facility to start-ups and conducts flagship B-Plan and other Business events. E-FOREA has a robust network of budding entrepreneurs and partner E-CELLS across India, as well as an enthusiastic alumni network. E-FOREA is a part of National Entrepreneurship Network (NEN) and partners with NITK-STEP and Department of Science and Technology (DST), Govt. of India.						
-					</p>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#intro-->
+		<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h1>Entrepreneurship</h1><h2>is living a few years of your like like most people won't, so that you can spend the rest of your life like most people can't. </h2>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- headerwrap -->
+
+
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+			<div class="col-lg-8">
+				
+				<h1>WHO WE ARE</h1>
+				<p>Engineer’s Forum for Entrepreneurship Awareness (E-FOREA) is the E-CELL of NITK.</p>
+
+				<p>Engineers’ Forum for Entrepreneurship Awareness (EFOREA) is the E-Cell of NITK. It’s raison d’être (as its more verbose members would say) is to disseminate entrepreneurship education among students, and encourage them to come up with unique ideas – and then build on those ideas to start their own venture.E-FOREA was awarded the best technical school promoting entrepreneurship education in India by Intel and NITIE, in 2012.</p>
+				
+				<p>E-FOREA provides entrepreneurship education, incubation facility to start-ups and conducts flagship B-Plan and other Business events. E-FOREA has a robust network of budding entrepreneurs and partner E-CELLS across India, as well as an enthusiastic alumni network. E-FOREA is a part of National Entrepreneurship Network (NEN) and partners with NITK-STEP and Department of Science and Technology (DST), Govt. of India.</p>
+			</div><!-- col-lg-4 -->
+
+			<!-- col-lg-4 -->
+		</div><!-- row -->
+		<br>
+		<br>
+	</div><!-- container -->
+
+
+	<!-- PORTFOLIO SECTION -->
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<br><br>
+				<div class="col-lg-8 col-lg-offset-2">
+					<h4>OUR MISSION</h4>
+					<p>To disseminate entrepreneurial knowledge in the premises whilst nurturing revolutionary ideas and translating them into successful start-ups.</p>
+				<p><br/><br/></p>
+				</div>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-10 col-lg-offset-1">
+					<img class="img-responsive" src="assets/img/munter.jpg" alt="">
+				</div>
+			</div><!-- row -->
+		</div>
+	</div><!-- DG -->
+
+
+	<!-- FEATURE SECTION -->
+	<div class="container wb">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h4>OUR VISION</h4>
+			<p>To invigorate change and progress using entrepreneurship as an instrument and thus serve as an incubation facility for start-ups that will accomplish this change. Network with other E-Cells for improving entrepreneurial awareness.</p>
+		<p><br/><br/></p>
+		</div>
+	</div><!-- container -->
+
+
 	
-	<div id="second">
-		<div class="story"><div class="bg"></div>
-	    	<div class="float-right">
-	            <h1>Mission</h1>
-				<p>
-					Disseminate entrepreneurial knowledge in the premises whilst nurturing revolutionary ideas and translating them into successful start-ups.
-				</p>
-	        </div>
-	    </div> <!--.story-->
-	    
-	</div> <!--#second-->
 	
-	<div id="third">
-		<div class="story">
-	    	<div class="float-left">
-	        	<h1>Vision</h1>
-				<p>
-					Invigorate change and progress using entrepreneurship as an instrument and thus serve as an incubation facility for start-ups that will accomplish this change.
-Network with other E-Cells for improving entrepreneurial awareness.
-				</p>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#third-->
-	
-	<div id="fifth">
-		<div class="story">
-		    <p> Footer stuff </p>
-	    </div> <!--.story-->
-	</div> <!--#fifth-->
 {% endblock %}

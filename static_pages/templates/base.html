@@ -2,101 +2,100 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Eforea NITK</title>
-	<link rel="stylesheet" href="{% static 'static_pages/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'static_pages/css/bootstrap-theme.min.css' %}">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Eforea NITK</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'static_pages/assets/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'static_pages/assets/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'static_pages/assets/css/main.css' %}" rel="stylesheet">
+	
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{% static 'static_pages/css/style.css' %}">
 	<script src="{% static 'static_pages/js/jquery/jquery.min.js' %}"></script>
 	<script src="{% static 'static_pages/js/bootstrap.min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'static_pages/js/jquery.parallax-1.1.3.js' %}"></script>
-	<script type="text/javascript" src="{% static 'static_pages/js/jquery.localscroll-1.2.7-min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'static_pages/js/jquery.scrollTo-1.4.2-min.js' %}"></script>
-	{%block load_script %} {% endblock %}
-	<style>
-		/* Navbar Styling */
-		.brand-box{
-			position: absolute;
-			top: 0px;
-			right: 30px;
-			height: 100px;
-			width: 80px;
-			background: transparent;
-			z-index: 80;
-		}
-		.brand-box .brand{
-			height: 100px;
-			width: 80px;
-			background: #ccc;
-			-webkit-box-shadow: 6px 7px 38px -13px rgba(0,0,0,0.75);
-			-moz-box-shadow: 6px 7px 38px -13px rgba(0,0,0,0.75);
-			box-shadow: 6px 7px 38px -13px rgba(0,0,0,0.75);
-			padding-left: 10px;
-			padding-top: 10px;
-		}
-		.brand-box .brand .logo{
-			font-size: 80px;
-			color: rgb(0, 120, 157);
-			text-shadow: rgb(224, 224, 224) 1px 1px 0px;
-		}
-		.brand-box .arrow{
-			height: 0px;
-			width: 0px;
-			border-top: 10px solid #ccc;
-			border-left:  40px solid transparent;
-			border-right: 40px solid transparent;
-			-webkit-box-shadow: 6px 7px 38px -13px rgba(0,0,0,0.75);
-			-moz-box-shadow: 6px 7px 38px -13px rgba(0,0,0,0.75);
-			box-shadow: 6px 7px 38px -13px rgba(0,0,0,0.75);
-		}
-
-		.navbar {
-			background-color: #fff;
-			font-family: 'Roboto Condensed', sans-serif;
-			font-size: 15px;
-			
-		}
-	</style>
+	
 </head>
 <body>
-	
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">
-						<div class="brand-box">
-							<div class="brand">
-								<i class="logo"></i>
-							</div>
-							<div class="arrow"></div>
-						</div>
-					</a></li>
-				</ul>
-				<div class="navbar-header navbar-right">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
-				      <span class="sr-only">Toggle navigation</span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				    </button>
-				</div>
-				<div class="collapse navbar-collapse" id="nav-collapse">
-					<ul class="nav navbar-nav">
-				      <li><a href="{% url 'home' %}">Home</a></li>
-				      <li><a href="{% url 'events' %}">Events</a></li>
-				      <li><a href="{% url 'projects' %}">Projects</a></li>
-				      <li><a href="{% url 'startups' %}">Startups</a></li>
-				      <li><a href="#">E-pitch</a></li>
-				    </ul>
-				</div>
-			</div>
-		</nav>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">EFOREA</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="about.html">PROJECTS</a></li>
+            <li><a href="works.html">E-PITCH</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 		
 		<div class="main">
 			{% block content %} {% endblock %}
 		</div>
-		<div class="footer"></div>
+	<section id="contact"></section>
+	<div id="sf">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 dg">
+					<h4 class="ml">FACEBOOK</h4>
+					<p class="centered"><a href="https://www.facebook.com/eforea"><i class="fa fa-facebook"></i></a></p>
+					<p class="ml">Follow Our Page</p>
+				</div>
+				<div class="col-lg-6 lg">
+					<h4 class="ml">TWITTER</h4>
+					<p class="centered"><a href="#"><i class="fa fa-twitter"></i></a></p>
+					<p class="ml">> Follow Us</p>
+				</div>
+				
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Social Footer -->
 	
+	<!-- CONTACT FOOTER -->
+	<div id="cf">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+		        	<div id="mapwrap">
+						<iframe height="260" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.co.in/maps?t=m&amp;ie=UTF8&amp;ll=13.012001,74.793956&amp;spn=0.01221,0.021136&amp;z=14&amp;q=NITK&amp;output=embed"></iframe>
+					</div>	
+				</div><!--col-lg-8-->
+				<div class="col-lg-4">
+					<h4>ADDRESS</h4>
+					<br>
+					<p>
+						The National Institute Of Karnataka <br>
+						Surathkal <br>
+						Mangalore -575025 <br>
+						India
+					</p>
+					<p>
+						Convenor: Neetesh Hegde<br/>
+						P: 9483647944<br/>
+						E: <a href="mailto:#">hello@linkagency.com</a>
+					</p>
+					
+				</div><!--col-lg-4-->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Contact Footer -->
+	</section>	
 </body>
 </html>
